@@ -1,0 +1,19 @@
+{
+  "name": "solana1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"tsc && node ./build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:program": "cargo build-bpf --manifest-path=./blockchain1/Cargo.toml",
+    "deploy:program":"solana program deploy /media/zulfikra/5c5142b0-6c3a-44a6-a4eb-0283f1f1f99c1/PROJECT/LEARNING/RUST/solana1/blockchain1/target/deploy/blockchain1.so"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.73.0",
+    "@types/mz": "^2.7.4",
+    "mz": "^2.7.0"
+  }
+}
